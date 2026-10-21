@@ -26,7 +26,7 @@
 • XML 声明式 AOP 切面，拦截 Service 层方法自动写入审计日志，记录操作人、方法、参数、耗时，规避 AOP 递归拦截。
 • 实现加盐 MD5 密码方案，兼容存量纯 MD5 老用户，完成新旧密码平滑迁移；设计攻略人工审核流程，未审核内容前台不可见。
 
-Swift Link Service 分布式短链接跳转服务
+项目五：Swift Link Service 分布式短链接跳转服务
 技术栈：Java17、SpringBoot3.2、SpringCloudAlibaba、MySQL8、Redis7、Redisson、MyBatis-Plus、Nacos
 独立设计并实现面向营销短信、渠道推广场景的分布式短链接服务，支持多实例集群部署，提供短链生成、302 跳转、访问 PV/UV 统计、过期失效、安全风控能力。
 • 短码生成：雪花算法 + Base62 编码，基于 Redis List 实现短码预生成池，将 ID 生成前置；使用 Redisson 分层分布式锁 + MySQL 唯一索引，保证集群环境下短码全局唯一。
