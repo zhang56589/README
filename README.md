@@ -12,7 +12,7 @@ Tech Stack: SpringBoot, MyBatis, MySQL, Vue3, Element Plus
 - 数据库分层设计，单表统一承载多类型资源，业务表与资源抽象层解耦；采用软删除保证审计可追溯，附带初始化演示 SQL
 - 前后端分离架构，后端提供标准化预约、查询、审批接口；前端实现资源浏览、预约表单、预约记录管理页面
 
-👉 [View Repo](https://github.com/xxx/room-booking-service)
+👉 [View Repo](https://github.com/zhang56589/room-booking-service)
 
 ## 2. react-agent-secure
 **Secure Controllable ReAct Agent｜安全可控 ReAct 智能体**
@@ -23,7 +23,7 @@ Tech Stack: Python, pytest
 - 支持上下文摘要压缩、JSON 断点续跑、轮转日志、爬虫节流缓存机制
 - 基于 pytest 编写单元测试，覆盖协议解析、安全校验逻辑，支持自动化回归
 
-👉 [View Repo](https://github.com/xxx/react-agent-secure)
+👉 [View Repo](https://github.com/zhang56589/react-agent-secure)
 
 ## 3. offline-report-service
 **Offline Report Task Service｜大数据离线报表任务服务**
@@ -33,7 +33,7 @@ Tech Stack: SpringBoot 2.7, EasyExcel, Quartz, Redis, MySQL
 - EasyExcel 流式读写，解决大批量导出 OOM 问题；Redis 缓存统计中间结果，降低数据库压力
 - 任务状态持久化，支持失败重试，完善异常捕获与容错处理
 
-👉 [View Repo](https://github.com/xxx/offline-report-service)
+👉 [View Repo](https://github.com/zhang56589/offline-report-service)
 
 ## 4. game-strategy-platform
 **Game Strategy Sharing Platform｜游戏攻略分享社区**
@@ -44,7 +44,7 @@ Tech Stack: Spring5, SpringMVC5, JdbcTemplate, MySQL8, Druid, JSP, Tomcat9
 - XML 声明式 AOP，拦截 Service 层自动写入审计日志，规避 AOP 自调用递归拦截问题
 - 实现加盐 MD5 密码方案，支持新旧密码平滑迁移；搭建内容人工审核流程，未审核内容前台隔离
 
-👉 [View Repo](https://github.com/xxx/game-strategy-platform)
+👉 [View Repo](https://github.com/zhang56589/game-strategy-platform)
 
 ## 5. swift-link-service
 **Distributed Short Link Service｜分布式短链接跳转服务**
@@ -56,7 +56,7 @@ Tech Stack: Java17, SpringBoot3.2, SpringCloudAlibaba, MySQL8, Redis7, Redisson,
 - 独立线程池异步埋点访问日志，Hash 统计 PV、HyperLogLog 估算 UV，定时任务幂等落库
 - 全局异常处理器、统一返回体规范，Nacos 配置中心管理配置；附带单元测试、初始化 SQL、集群部署文档
 
-👉 [View Repo](https://github.com/xxx/swift-link-service)
+👉 [View Repo](https://github.com/zhang56589/swift-link-service)
 
 ## 6. monitor-alert-platform
 **Business Metric Monitor & Alert Platform｜业务指标监控告警平台**
@@ -68,7 +68,7 @@ Tech Stack: SpringBoot3.4, RocketMQ, Redis, Redisson, MySQL, Vue3
 - 告警通知表采用 alert_no + channel 联合唯一键，保证 MQ 重复消费不重复推送；支持 Redis 异常时缓存降级回源 MySQL
 - Vue3 + ElementPlus 实现指标看板、告警规则配置、告警历史页面；REST API 对外暴露，支持 Docker 一键部署
 
-👉 [View Repo](https://github.com/xxx/monitor-alert-platform)
+👉 [View Repo](https://github.com/zhang56589/monitor-alert-platform)
 
 ---
 
