@@ -1,8 +1,8 @@
 # Backend & Security Portfolio
 > Personal resume projects, covering resource scheduling, legacy SSM security, offline batch task, secure agent, distributed short link.
-> 后端 & 安全方向个人作品集，用于简历展示。按投入深度排序，前三个为重点项目。
+> 后端 & 安全方向个人作品集，用于简历展示。
 
-## 1. room-booking-service
+## 1. resource-booking-platform
 **Resource Scheduling Platform｜企业内部资源预约中台**
 Tech Stack: SpringBoot, MyBatis, MySQL, Vue3, Element Plus
 
@@ -12,9 +12,9 @@ Tech Stack: SpringBoot, MyBatis, MySQL, Vue3, Element Plus
 - 数据库分层设计，单表统一承载多类型资源，业务表与资源抽象层解耦；软删除保证审计可追溯，附初始化演示 SQL
 - 前后端分离，后端提供标准化预约/查询/审批接口，前端实现资源浏览、预约表单、记录管理页面
 
-👉 [View Repo](https://github.com/zhang56589/room-booking-service)
+👉 [View Repo](https://github.com/zhang56589/resource-booking-platform)
 
-## 2. game-strategy-platform
+## 2. game-guide-community
 **Game Strategy Sharing Platform｜游戏攻略分享社区**
 Tech Stack: Spring5, SpringMVC5, JdbcTemplate, MySQL8, Druid, JSP, Tomcat9
 > Feature: Pure XML configuration, zero annotation for Bean / AOP / Filter
@@ -23,7 +23,7 @@ Tech Stack: Spring5, SpringMVC5, JdbcTemplate, MySQL8, Druid, JSP, Tomcat9
 - XML 声明式 AOP 拦截 Service 层自动写入审计日志；针对 AOP 自调用导致拦截失效的问题，通过暴露代理对象重构调用链解决
 - 实现加盐 MD5 密码方案，支持新旧密码平滑迁移；搭建内容人工审核流程，未审核内容前台隔离
 
-👉 [View Repo](https://github.com/zhang56589/game-strategy-platform)
+👉 [View Repo](https://github.com/zhang56589/game-guide-community)
 
 ## 3. offline-report-service
 **Offline Report Task Service｜大数据离线报表任务服务**
@@ -35,16 +35,15 @@ Tech Stack: SpringBoot 2.7, EasyExcel, Quartz, Redis, MySQL
 
 👉 [View Repo](https://github.com/zhang56589/offline-report-service)
 
-## 4. react-agent-secure
+## 4. secure-react-agent
 **Secure Controllable ReAct Agent｜安全可控 ReAct 智能体**
 Tech Stack: Python, pytest
-> 个人学习项目，聚焦 Agent 推理循环与安全边界验证，非生产级实现。
 
 - 从零实现 ReAct 推理主循环，自定义工具调用协议，轻量无重型框架依赖，便于安全审计
 - 内置路径穿越防护模块，对文件访问能力做权限隔离；封装网页搜索、安全文件读取工具
 - 基于 pytest 编写单元测试，覆盖协议解析与安全校验逻辑
 
-👉 [View Repo](https://github.com/zhang56589/react-agent-secure)
+👉 [View Repo](https://github.com/zhang56589/secure-react-agent)
 
 ## 5. swift-link-service
 **Distributed Short Link Service｜分布式短链接跳转服务**
@@ -52,7 +51,6 @@ Tech Stack: Java17, SpringBoot3.2, MySQL8, Redis7, MyBatis-Plus
 
 - 雪花算法 + Base62 生成短码，MySQL 唯一索引兜底并发场景下的短码全局唯一
 - Cache-Aside 缓存方案，空值缓存防止缓存穿透
-> 个人学习项目，聚焦短码生成与缓存基础机制，非生产级实现。
 
 👉 [View Repo](https://github.com/zhang56589/swift-link-service)
 
